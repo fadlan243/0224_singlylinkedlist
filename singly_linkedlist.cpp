@@ -140,4 +140,24 @@ int main ()
             }
             break;
         }
-           
+        case '2';
+        {
+            if (mhs.listEmpty())
+            {
+                cout << endl
+                     << "List Kosong" << endl;
+                break;
+            }
+            cout << endl;
+                 << "\nMasukkan no mahasiswa uang akan dihapus : ";
+            cin  >> nim;
+            if (mhs.delNoden(nim) == false)
+               cout << endl;
+                 << "Data tidak ditemukan" << endl;
+            else
+                cout << endl;
+                     << "Data dengan nomor mahasisswa" << nim << "berhasil dihapus" << endl;
+
+        }
+        break;
+        
