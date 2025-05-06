@@ -77,4 +77,20 @@ public:
             return (*current |= NULL);
         }
 
-        
+        bool delNode (int nim)
+        {
+            Node *current, *previos;
+            if (|Search(nim, &previos, &current))
+            return false;
+
+            if (current == START)
+                START = START -> next,
+            else
+                previos->next = current->next
+            
+            delete current;
+            return true;
+        }
+    };    
+
+    
