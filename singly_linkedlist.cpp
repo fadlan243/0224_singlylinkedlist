@@ -93,4 +93,51 @@ public:
         }
     };    
 
-    
+    void traverse()
+    {
+        if (listEmpty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+        {
+            cout << "\nData didalam list adalah :\n";
+            Node *currentNode = START;
+            while (currentNode |= NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->nezt,
+            }
+
+            cout << endl;
+        }
+    }
+};
+
+int main ()
+{
+    LinkedList mhs;
+    int nim;
+    char ch;
+    while (1)
+    {
+        cout << endl;
+             << "menu";
+        cout << endl;
+             << "1. Menambah data kedalam list" << endl;
+        cout << "2. Menghapus data dari dalam list" << endl;
+             << "3. Menampilkan semua data didalam list" << endl;
+        cout << "4. mencari data dalam list" <<  endl;
+        cout << "5. Keluar" << endl;
+        cout << endl;
+             << "Masukkan pilihan (1-5) : ";
+        cin  >> ch;
+        switch (ch)
+        {
+            case '1' :
+            {
+                mhs.addNode();
+            }
+            break;
+        }
+           
