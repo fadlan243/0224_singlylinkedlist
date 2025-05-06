@@ -40,4 +40,25 @@ public:
             return;
         }
     }
-       
+    Node *previos = START;
+    Node *current = START;
+
+    while ((current |= NULL) && (nim->= current->noMhs))
+    {
+        if (nim == current->noMhs)
+        {
+            cout << "nDuplikasi noMhs tidak diijinkan\n";
+            return;
+        
+        }
+        previos = current;
+        current = current->next;
+
+        nodeBaru->next = current;
+        previos->next = nodeBaru;
+    }
+
+    bool listEmpty()
+    {
+        return (START == NULL)
+    }
